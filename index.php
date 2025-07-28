@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lighted Up - Illuminate Your Beauty</title>
+    <meta name="description" content="Discover premium lighted makeup mirrors for every beauty enthusiast and professional artist. Enhance your makeup experience with our curated selection of functional mirrors.">
+    <meta name="keywords" content="lighted makeup mirror, vanity mirror, beauty mirror, illuminated mirror, professional makeup mirror, compact travel mirror">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container navbar">
+        <a href="index.php" class="logo"><img src="images/logo.png" width="250px" alt=""></a>
+            <div class="menu-toggle">
+                <div class="hamburger"></div>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="about.php">About</a></li>
+                    <li><a href="contact.php">Contact</a></li>
+                    <li><a href="store.php">Store</a></li>
+                </ul>
+            </nav>
+            <button class="wallet-connect-btn">Contact Us</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Illuminate Your Beauty</h1>
+                    <p>Find high-end light up makeup mirrors for every beauty addict and makeup artist.</p>
+                    <a href="store.php"> <button class="shop-button">Shop Now</button></a>
+                    <div class="star-rating">★★★★★</div>
+                </div>
+                <div class="hero-image">
+                    <img src="images/banner.webp" alt="Well-lit vanity mirror">
+                </div>
+            </div>
+        </section>
+
+        <section class="info-section">
+            <div class="container">
+                <div class="info-image">
+                    <img src="images/about.webp" alt="Elaborate makeup station">
+                </div>
+                <div class="info-content">
+                    <h2>Illuminate Your Beauty Routine</h2>
+                    <p>At Lighted Makeup Mirror, we offer luxurious, modern mirrors featuring built-in lights ideal for makeup artists and beauty junkies. Our curated collection of mirror essentials takes makeup application to the next level.</p>
+                    <div class="sub-sections">
+                        <div class="sub-section-item">
+                            <h6>Your Beauty, Perfectly Lit</h6>
+                            <p>Find all sorts of small travel mirrors and full-size vanity mirrors with lights that are designed to bring a crystal-clear reflection to your beauty routine.</p>
+                        </div>
+                        <div class="sub-section-item">
+                            <h6>Elegance Meets Functionality</h6>
+                            <p>Take a look at our stylish, practical mirrors with lights for beauty.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="product-categories">
+            <div class="container">
+                <h3>Premium Makeup Mirrors</h3>
+                <div class="categories-grid">
+                    <div class="category-item">
+                        <img src="images/travel.webp" alt="Compact Travel Mirrors">
+                        <h6 style="color: black;">Compact Travel Mirrors</h6>
+                        <p>Ideal for the busy beauty lover that enjoys great definition andclariy.</p>
+                    </div>
+                    <div class="category-item">
+                        <img src="images/vanity.webp" alt="Vanity Mirrors">
+                        <h6 style="color: black;">Vanity Mirrors</h6>
+                        <p>Full-sized mirrors with adjustable LED lights for perfect makeup applications.</p>
+                    </div>
+                    <div class="category-item">
+                        <img src="images/stylish.webp" alt="Stylish Functional Mirrors">
+                        <h6 style="color: black;">Stylish Functional Mirrors</h6>
+                        <p>Add a new level of glamour to your daily routine with our must-have mirrors.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="benefit-section">
+            <div class="container">
+                <h3>Why Choose Lighted Up?</h3>
+                <div class="benefits-grid">
+                    <div class="benefit-item">
+                        <div class="benefit-step">1</div>
+                        <h4>Perfect Illumination</h4>
+                        <p>Our mirror makes this light perfect for a nice makeup application, so all the details are visible.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-step">2</div>
+                        <h4>Stylish Designs</h4>
+                        <p>Accentuate your decor with our luxurious selection of mirror designs.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-step">3</div>
+                        <h4>Portable & Versatile</h4>
+                        <p>Between pocket-sizes that are perfect for travel to full size options perfect for your vanity, discover the ideal mirror for you.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-step">4</div>
+                        <h4>Durable Quality</h4>
+                        <p>Crafted with high-quality materials, our mirrors are built to last and withstand daily use.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+
+        <section class="testimonials">
+            <div class="container">
+                <h3>What Our Customers Say</h3>
+                <div class="testimonials-grid">
+                    <div class="testimonial-item">
+                        <p>“This mirror has revolutionized the way I now do my make-up, perfect lighting, great design. Highly recommend!"</p>
+                        <h4>Sophia L.</h4>
+                        <div class="stars">★★★★★</div>
+                    </div>
+                    <div class="testimonial-item">
+                        <p>“I am so in love with my new lighted mirror! It renders makeup application so much less awkward and more fun."</p>
+                        <h4>Emma R.</h4>
+                        <div class="stars">★★★★★</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-column">
+                <h4>Lighted Up</h4>
+                <p>Illuminate Your Beauty with our premium lighted makeup mirrors.</p>
+            </div>
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="about.php">About</a></li>
+                    <li><a href="store.php">Store</a></li>
+                    <li><a href="contact.php">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="terms_conditions.php">Terms</a></li>
+                    <li><a href="shipping_policy.php">Shipping</a></li>
+                    <li><a href="return_policy.php">Returns</a></li>
+                    <li><a href="privacy.php">Privacy Policy</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column newsletter-column">
+                <h4>Subscribe to our newsletter</h4>
+                <input type="email" placeholder="Email address">
+                <button>Submit</button>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Lighted Up. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

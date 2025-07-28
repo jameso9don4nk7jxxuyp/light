@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://LightedUp.store/sitemap.xml 
