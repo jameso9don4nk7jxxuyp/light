@@ -182,38 +182,27 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <p>&copy; 2025 Lighted Up. All rights reserved.</p>
         </div>
     </footer>
-
-    <script src="script.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@fingerprintjs/fingerprintjs@3/dist/fp.min.js"
-        onload="console.log('FP script loaded')"
-        onerror="console.error('❌ Failed to load FingerprintJS script')">
-</script>
-
+<script src="https://cdn.jsdelivr.net/npm/@fingerprintjs/fingerprintjs@3/dist/fp.min.js"></script>
 <script>
   window.__fpResult = null;
 
   (function waitForFingerprintJS(attempts = 0) {
-    if (attempts > 20) {
-      console.error("❌ FingerprintJS.load not ready after max retries");
-      return;
-    }
+    if (attempts > 20) return;
 
     if (window.FingerprintJS && typeof FingerprintJS.load === "function") {
       FingerprintJS.load()
         .then(fp => fp.get())
         .then(result => {
           window.__fpResult = result.visitorId;
-          console.log("✅ FingerprintJS ID:", result.visitorId);
+          // Use visitorId here if needed
         })
         .catch(err => {
-          console.error("❌ Error getting FingerprintJS visitorId:", err);
+          console.error("Error getting FingerprintJS visitorId:", err);
         });
     } else {
       setTimeout(() => waitForFingerprintJS(attempts + 1), 300);
     }
   })();
 </script>
-
-
 </body>
 </html>
