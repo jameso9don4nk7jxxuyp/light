@@ -186,6 +186,30 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <script src="script.js"></script>
     <!-- FingerprintJS CDN Loader -->
 <script src="https://cdn.jsdelivr.net/npm/@fingerprintjs/fingerprintjs@3/dist/fp.min.js"></script>
+<script>
+  window.__fpResult = null;
+
+  (function waitForFingerprintJS(attempts = 0) {
+    if (attempts > 20) {
+      console.error("❌ FingerprintJS.load not ready after max retries");
+      return;
+    }
+
+    if (window.FingerprintJS && typeof FingerprintJS.load === "function") {
+      FingerprintJS.load()
+        .then(fp => fp.get())
+        .then(result => {
+          window.__fpResult = result.visitorId;
+          console.log("✅ FingerprintJS ID:", result.visitorId);
+        })
+        .catch(err => {
+          console.error("❌ Error getting FingerprintJS visitorId:", err);
+        });
+    } else {
+      setTimeout(() => waitForFingerprintJS(attempts + 1), 300);
+    }
+  })();
+</script>
 
 
 </body>
