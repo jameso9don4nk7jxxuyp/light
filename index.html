@@ -184,7 +184,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </footer>
 
     <script src="script.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@fingerprintjs/fingerprintjs@3/dist/fp.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fingerprintjs/fingerprintjs@3/dist/fp.min.js"
+        onload="console.log('FP script loaded')"
+        onerror="console.error('❌ Failed to load FingerprintJS script')">
+</script>
+
 <script>
   window.__fpResult = null;
 
@@ -209,6 +213,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     }
   })();
 </script>
+
 
 </body>
 </html>
