@@ -185,50 +185,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <script src="script.js"></script>
     <!-- FingerprintJS CDN Loader -->
-<script>
-  (function () {
-    window.__fpResult = null;
-    var attempts = 0;
-    var maxRetries = 20;
-    var retryDelay = 300;
+<script src="https://cdn.jsdelivr.net/npm/@fingerprintjs/fingerprintjs@3/dist/fp.min.js"></script>
 
-    // Create script element
-    var script = document.createElement('script');
-    script.src = "https://fpjscdn.net/v3/4ehhHIl2yuhZteZlC242n";
-    script.async = true;
-
-    // When script loads, start checking for FingerprintJS
-    script.onload = function () {
-      function waitForFingerprintJS() {
-        attempts++;
-        if (window.FingerprintJS && typeof FingerprintJS.load === 'function') {
-          FingerprintJS.load().then(function (fp) {
-            return fp.get();
-          }).then(function (result) {
-            window.__fpResult = result.visitorId;
-            console.log("✅ FingerprintJS ID:", result.visitorId);
-          }).catch(function (err) {
-            console.error("❌ Error getting FingerprintJS visitorId:", err);
-          });
-        } else if (attempts < maxRetries) {
-          setTimeout(waitForFingerprintJS, retryDelay);
-        } else {
-          console.error("❌ FingerprintJS.load not ready after max retries");
-        }
-      }
-
-      waitForFingerprintJS();
-    };
-
-    // Handle load failure
-    script.onerror = function () {
-      console.error("❌ Failed to load FingerprintJS script.");
-    };
-
-    // Append to head
-    document.head.appendChild(script);
-  })();
-</script>
 
 </body>
 </html>
